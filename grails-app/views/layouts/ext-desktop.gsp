@@ -14,6 +14,7 @@
   <script type="text/javascript" src="${resource(dir:'ext/desktop',file: 'Desktop.js')}"></script>
   <script type="text/javascript" src="${resource(dir:'ext/desktop',file: 'App.js')}"></script>
   <script type="text/javascript" src="${resource(dir:'ext/desktop',file: 'Module.js')}"></script>
+  <script type="text/javascript" src="${resource(dir:'ext/desktop',file: 'EmbeddedModule.js')}"></script>
   <g:layoutHead/>
 </head>
 
