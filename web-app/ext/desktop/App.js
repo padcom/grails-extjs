@@ -35,6 +35,11 @@ Ext.extend(Ext.app.App, Ext.util.Observable, {
             this.initModules(this.modules);
         }
 
+        this.shortcuts = this.getShortcuts();
+        if(this.shortcuts){
+            this.initShortcuts(this.shortcuts);
+        }
+
         this.init();
 
         Ext.EventManager.on(window, 'beforeunload', this.onUnload, this);
@@ -42,8 +47,25 @@ Ext.extend(Ext.app.App, Ext.util.Observable, {
         this.isReady = true;
     },
 
+    getShortcuts : Ext.emptyFn,
     getModules : Ext.emptyFn,
     init : Ext.emptyFn,
+
+    initShortcuts : function(shortcuts) {
+        var template = new Ext.XTemplate(
+            '<tpl for=".">',
+            '<dt id="{id}-shortcut">',
+              '<a href="#">',
+                '<img src="http://extjs.cachefly.net/ext-3.3.1/resources/images/default/s.gif" />',
+                '<div>{title}</div>',
+              '</a>',
+            '</dt>',
+            '</tpl>'
+        );
+
+        var container = Ext.get("x-shortcuts");
+        template.append(container, shortcuts);
+    },
 
     initModules : function(ms){
 		for(var i = 0, len = ms.length; i < len; i++){
