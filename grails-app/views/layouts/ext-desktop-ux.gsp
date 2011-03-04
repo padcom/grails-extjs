@@ -11,6 +11,7 @@
   <script type="text/javascript">
     Ext.BLANK_IMAGE_URL = '${resource(dir:'ext/resources/images/default', file: 's.gif')}';
   </script>
+  <script type="text/javascript" src="${resource(dir:'ext-desktop',file: 'ScriptLoader.js')}"></script>
   <script type="text/javascript" src="${resource(dir:'ext-desktop',file: 'StartMenu.js')}"></script>
   <script type="text/javascript" src="${resource(dir:'ext-desktop',file: 'TaskBar.js')}"></script>
   <script type="text/javascript" src="${resource(dir:'ext-desktop',file: 'Desktop.js')}"></script>
