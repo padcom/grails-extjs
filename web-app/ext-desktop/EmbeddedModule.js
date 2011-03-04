@@ -1,3 +1,5 @@
+Ext.ns("Ext.app");
+
 Ext.app.EmbeddedModule = Ext.extend(Ext.app.Module, {
     init : function(){
         this.launcher = {
@@ -19,7 +21,7 @@ Ext.app.EmbeddedModule = Ext.extend(Ext.app.Module, {
                 iconCls: this.iconCls,
                 width:this.width,
                 height:this.height,
-                autoLoad: { url: this.url, scripts: true, params: { parentId: this.id }, method: 'GET' },
+                autoLoad: { url: this.url, scripts: true, params: { parentId: this.id } },
                 shim:false,
                 animCollapse:true,
                 constrainHeader:true
