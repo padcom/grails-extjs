@@ -2,9 +2,9 @@
 
 <head>
   <title><g:layoutTitle default="Ext JS"/></title>
-  <link rel="stylesheet" href="http://extjs.cachefly.net/ext-3.3.1/resources/css/ext-all.css" />
-  <script type="text/javascript" src="http://extjs.cachefly.net/ext-3.3.1/adapter/ext/ext-base.js"></script>
-  <script type="text/javascript" src="http://extjs.cachefly.net/ext-3.3.1/ext-all.js"></script>
+  <link rel="stylesheet" href="${resource(dir:'ext/resources/css', file: 'ext-all.css')}" />
+  <script type="text/javascript" src="${resource(dir:'ext/adapter/ext', file: 'ext-base.js')}"></script>
+  <script type="text/javascript" src="${resource(dir:'ext', file: 'ext-all.js')}"></script>
   <g:layoutHead/>
 </head>
 
