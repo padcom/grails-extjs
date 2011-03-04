@@ -21,6 +21,7 @@ Ext.app.EmbeddedModule = Ext.extend(Ext.app.Module, {
                 iconCls: this.iconCls,
                 width:this.width,
                 height:this.height,
+                layout: this.layout || 'fit',
                 autoLoad: { url: this.url, scripts: true, params: { parentId: this.id } },
                 shim:false,
                 animCollapse:true,
