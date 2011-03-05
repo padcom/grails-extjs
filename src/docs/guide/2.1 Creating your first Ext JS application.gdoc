@@ -1,0 +1,23 @@
+After you've installed this plugin here's a simple Hello, world! style page that will make use of the very basic ext template:
+
+{code}
+<html>
+
+<head>
+  <meta name="layout" content="ext"/>
+  <script type="text/javascript">
+    Ext.onReady(function() {
+      Ext.MessageBox.alert("Information", "Hello, world! from Ext JS");
+    });
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>
+{code}
+
+The template @ext@ takes care of loading all the necessary resources.
+
+If you want (and you probably will) to know more about the Ext JS library please refer to the documentation and learning materials from Senecha.

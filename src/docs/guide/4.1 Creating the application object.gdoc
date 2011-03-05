@@ -1,0 +1,30 @@
+At first you need an application object that's extending the Ext.app.App class. You can do so like this:
+
+{code}
+MyApp = new Ext.app.App({
+    init: function(){
+    },
+
+    getModules: function(){
+        return [
+        ]
+    },
+
+    getShortcuts: function(){
+        return [
+        ]
+    },
+
+    getStartConfig: function(){
+        return {
+        }
+    }
+});
+{code}
+
+{note}
+The application object already contains everything it needs in Ext.onReady event handler so you should put it directly into the script and *NOT* into the Ext.onReady event handler!
+{note}
+
+This is the basic template. We'll examine those in the following sections.
+

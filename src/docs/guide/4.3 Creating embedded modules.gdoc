@@ -1,0 +1,19 @@
+An embedded module is a module that has its content downloaded from some other file. This is very similar to when you're instantiating the @Ext.app.Module@ but it assumes that the content will be downloaded from a URL:
+
+{code}
+new Ext.app.EmbeddedModule({ 
+    id: 'example-win',
+    url: '/example/modules/example.gsp',
+    name: 'Example 1',
+    title: 'Example 2',
+    iconCls: 'grid-icon',
+    width: 800,
+    height: 600
+})
+{code}
+
+Once again this will create a module with the following properties:
+
+- text to be displayed in menu start is 'Example 1'
+- window title will be 'Example 2'
+- the content will be downloaded from @/example/modules/example.gsp@

@@ -1,0 +1,26 @@
+h1. ScriptLoader class
+
+h2. Purpose
+
+A class to provider capabilities for on-demand loading of external JavaScript files.
+
+h2. Examples
+
+{code}
+<script type="text/javascript">
+  Ext.ScriptMgr.load({
+    disableCaching: true,
+    scripts: [
+      '/example/js/modules/example.js'
+    ],
+    callback: function() {
+      alert("All modules loaded");
+    }
+  });
+</script>
+{code}
+
+h2. Description
+
+See the [section on creating loadable content for Ext.app.EmbeddedModule|guide:4.3.1 Creating loadable content for Ext.app.EmbeddedModule] for more information 
+

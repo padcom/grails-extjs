@@ -1,0 +1,23 @@
+The purpose of @getModules@ function is to return an array of objects inheriting from @Ext.app.Module@, like the @Ext.app.Module@ or @Ext.app.EmbeddedModule@. You can do so like this:
+
+{code}
+getModules: function(){
+    return [
+        new Ext.app.EmbeddedModule({ 
+            id: 'example-win',
+            url: '/example/modules/example.gsp',
+            name: 'Example 1',
+            title: 'Example 2',
+            iconCls: 'grid-icon',
+            width: 800,
+            height: 600
+        })
+    ]
+}
+{code}
+
+This will create an embedded module (more on what an embedded module is later in this doc) and return it to the application.
+
+{warning}
+An application *MUST* consist of at least one module!
+{warning}

@@ -1,0 +1,14 @@
+Along with the @ext@ layout there are several other layouts providing different sets of resources:
+
+- @ext@ - just the basic Ext JS libraries and content
+- @ext-ux@ - the basic Ext JS libraries and ux-all.*
+- @ext-jquery@ - just the basic Ext JS libraries and content with jQuery and the appropriate adapter
+- @ext-ux-jquery@ - the basic Ext JS libraries, ux-all.*, with jQuery and the appropriate adapter
+- @ext-prototype@ - just the basic Ext JS libraries and content with Prototype and the appropriate adapter
+- @ext-ux-prototype@ - the basic Ext JS libraries, ux-all.*, with Prototype and the appropriate adapter
+- @ext-desktop@ - basic Ext JS libraries and content plus a slightly modified version of the desktop example as a ready-to-use platform
+- @ext-desktop-jquery@ - basic Ext JS libraries and content plus a slightly modified version of the desktop example as a ready-to-use platform with jQuery and the appropriate adapter
+- @ext-desktop-prototype@ - basic Ext JS libraries and content plus a slightly modified version of the desktop example as a ready-to-use platform with Prototype and the appropriate adapter
+- @ext-desktop-ux@ - basic Ext JS libraries and content plus a slightly modified version of the desktop example as a ready-to-use platform with ux-all
+- @ext-desktop-ux-jquery@ - basic Ext JS libraries and content plus a slightly modified version of the desktop example as a ready-to-use platform with ux-all, jQuery and the appropriate adapter
+- @ext-desktop-ux-prototype@ - basic Ext JS libraries and content plus a slightly modified version of the desktop example as a ready-to-use platform with ux-all, Prototype and the appropriate adapter

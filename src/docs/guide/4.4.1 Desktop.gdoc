@@ -1,0 +1,9 @@
+To style the desktop (change its color and possibly wallpaper) create a style for the x-desktop element like this:
+
+{code}
+#x-desktop {
+   background: black url(${resource(dir:'images', file: 'grails_logo.png')}) no-repeat center;
+}
+{code}
+
+This will change the background color to black (which is what I like the most :)) and set the image grails_logo.png (available to all grails applications if you didn't remove it manually) to be displayed in the center.  

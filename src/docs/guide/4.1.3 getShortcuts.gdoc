@@ -1,0 +1,10 @@
+The purpose of the @getShortcuts@ function is to return a list of definitions of desktop shortcuts (icons) to be placed on the desktop. Here's an example placing a shortcut to  module with the window id @example-win@:
+
+{code}
+getShortcuts : function() {
+    return [ {
+        id: 'example-win',
+        title: 'Example Window'
+    } ]
+}
+{code}

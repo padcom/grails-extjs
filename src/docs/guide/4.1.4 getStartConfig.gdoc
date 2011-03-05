@@ -1,0 +1,21 @@
+The purpose of @getStartConfig@ is to return the definition of how the start menu will look like. This means the icons in the right column (the so called tools), title and optional icon to be placed left of the title. Here's an example of such function:
+
+{code}
+getStartConfig: function() {
+    return {
+        title: 'Jack Slocum',
+        iconCls: 'user',
+        toolItems: [{
+            text:'Settings',
+            iconCls:'settings',
+            scope:this
+        },'-',{
+            text:'Logout',
+            iconCls:'logout',
+            scope:this
+        }]
+    };
+},
+{code}
+
+As you can see here there we have defined 2 tools (Settings and Logout) and the title "Jack Slocum" with icon "user".
