@@ -16,7 +16,6 @@ Ext.ScriptLoader.prototype = {
     hideMask: function() {
       if (this.loadMask) {
         this.loadMask.hide();
-        this.loadMask = null;
       }
     },
 
