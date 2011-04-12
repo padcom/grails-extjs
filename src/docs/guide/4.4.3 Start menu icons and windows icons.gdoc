@@ -1,0 +1,23 @@
+Styling menu start icons and icons for windows is exactly the same as adding an icon to a button element. You define a custom style and specify it in the module's configuration:
+
+{code}
+new Ext.app.EmbeddedModule({ 
+    id: 'example-win',
+    url: '/example/modules/example.gsp',
+    name: 'Example 1',
+    title: 'Example 2',
+    iconCls: 'grid-icon',
+    width: 800,
+    height: 600
+})
+{code}
+
+Note the @iconCls@ in the code above. Here's how its defined:
+
+{code}
+.grid-icon {
+    background-image: url(http://cdn1.blackberryforums.com/images/icons/icon11.gif);
+}
+{code}
+
+Make sure your image for the icon is exactly 16x16 or else it will look really bad :(

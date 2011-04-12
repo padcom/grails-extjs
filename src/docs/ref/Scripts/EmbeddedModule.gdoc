@@ -1,0 +1,23 @@
+h1. EmbeddedModule class
+
+h2. Purpose
+
+A class that defines common behavior for modules that load from another source using an Ajax call
+
+h2. Examples
+
+{code}
+new Ext.app.EmbeddedModule({ 
+    id: 'example-win',
+    url: '/example/modules/example.gsp',
+    name: 'Example 1',
+    title: 'Example 2',
+    iconCls: 'grid-icon',
+    width: 800,
+    height: 600
+})
+{code}
+
+h2. Description
+
+See the [section on creating embedded modules|guide:4.3 Creating embedded modules] for more information on @EmbeddeModule@ class

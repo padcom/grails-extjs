@@ -1,0 +1,7 @@
+To get started with Ext JS you need to install the plugin into a Grails application:
+
+{code}
+grails install-plugin extjs
+{code}
+
+With this done you have all the Ext JS resources available to your application as well as some predefined templates.

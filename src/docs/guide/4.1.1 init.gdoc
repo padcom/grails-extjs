@@ -1,0 +1,9 @@
+This function is called once the application starts. Typically you'd want to run any initialization code here, for example code that initializes QuickTips:
+
+{code}
+init: function(){
+    Ext.QuickTips.init();
+},
+{code}
+
+This is also the place to run any application-specific initialization code.

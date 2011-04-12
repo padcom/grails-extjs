@@ -1,0 +1,46 @@
+To create a module you'll have to instantiate the @Ext.app.Module@ class passing it a configuration object like this:
+
+{code}
+Ext.ns("Modules");
+
+Modules.Example = Ext.extend(Ext.app.Module, {
+    id: 'example-win',
+
+    init : function(){
+        this.launcher = {
+            text: 'Example 1',
+            iconCls: 'icon-example',
+            handler : this.createWindow,
+            scope: this,
+            windowId: this.id
+        }
+    },
+
+    createWindow : function(src){
+        var desktop = this.app.getDesktop();
+        var win = desktop.getWindow(this.id);
+        if(!win){
+            win = desktop.createWindow({
+                id: this.id,
+                title: 'Example 2',
+                iconCls: 'icon-example',
+                width: 800,
+                height: 600,
+                layout: 'fit',
+                html: 'Put something useful here...',
+                shim:false,
+                animCollapse:true,
+                constrainHeader:true
+            });
+        }
+        win.show();
+    }
+});
+{code}
+
+This will create a text-only module displaying the text 'Put something useful here...' in the body of the window with the following properties:
+
+- text to be displayed in menu start is 'Example 1'
+- window title will be 'Example 2'
+
+The rest is pretty much self-explanatory. 

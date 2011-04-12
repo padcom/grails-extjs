@@ -1,0 +1,14 @@
+Every shortcut should have a meaningful icon for the user to better recognize what this particular application does. A desktop icon here consts of an empty image (the s.gif one) and some text. Let's have a look at how we might make it more interesting.
+
+{code}
+#example-win-shortcut img {
+    width:48px;
+    height:48px;
+    background-image: url(${resource(dir:"images", file: "favicon.ico")});
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(
+        src='${resource(dir:"images", file: "favicon.ico")}', sizingMethod='scale'
+    );
+}
+{code}
+
+As you can see here the actual element's ID is build using the module id with "@-shortcut@" appendix. Here we set the size of the icon to be 48x48 and to be taken from the always available favicon.ico file. The filter in the last line is so that IE6 can display transparency for PNGs. In case you're wondering if specifying the size is necessary I rush to explain that it is. The default image is 1x1 pixel in size so other wise you'd only see the top-left pixel of your icon instead of the whole thing.

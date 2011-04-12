@@ -1,0 +1,64 @@
+To use the embedded module you need to provide it with some content that will be loaded into the window's body. You can provide any type of content as long as you remember the following rule:
+
+{note}
+Everything you load is de facto being included in the same window as the application itself.
+{note}
+
+This means of course that all Ext JS resources will be automatically available. Since the @ext-desktop@ layouts include the @ScriptLoader@ it's also possible to load additional JavaScript files to be used.
+
+{code}
+<script type="text/javascript">
+  Ext.ns("Modules.Example");
+
+  Modules.Example.config = {
+    parentId: '${params.parentId}'
+  }
+
+  Ext.ScriptMgr.load({
+    disableCaching: true,
+    scripts: [
+      '/example/js/modules/example.js'
+    ],
+    callback: function() {
+      Modules.Example.main();
+    }
+  });
+</script>
+{code}
+
+There are 2 things you need to remember:
+
+- This code is executed every time you open this module so it needs to be safe this way.
+- The @params.parentId@ contains the id of the module's window. This is the one defined as id in the embedded module.
+
+The *callback* method is executed once every single JavaScript file has been loaded and executed.
+
+Here's an example of JavaScript file mentioned in the example above:
+
+{code}
+Modules.Example.main = function() {
+  var win = Ext.getCmp(Modules.Example.config.parentId);
+
+  var count = 0;
+  var panel = new Ext.Panel({
+      layout: 'fit',
+      title: 'My panel',
+      items: {
+        xtype: 'button',
+        text: 'clickme1',
+        handler: function() {
+          Ext.MessageBox.alert("Info", "You clicked me " + (++count) + " times.");
+        }
+      }
+  });
+
+  win.add(panel);
+  win.doLayout();
+};
+{code}
+
+The definition of panel is kind of self explanatory so we'll not drill to it. What you need to remember though is:
+
+{note}
+Do not use the @renderTo@ option with modules. This will make the object impossible to fit into the parent's window (in this case the module's one)
+{note}
