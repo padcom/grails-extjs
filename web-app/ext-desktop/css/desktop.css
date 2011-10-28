@@ -1,10 +1,11 @@
 /*!
- * Ext JS Library 3.3.1
- * Copyright(c) 2006-2010 Sencha Inc.
+ * Ext JS Library 3.4.0
+ * Copyright(c) 2006-2011 Sencha Inc.
  * licensing@sencha.com
  * http://www.sencha.com/license
  */
 html, body {
+	background:#3d71b8 url(../wallpapers/desktop.jpg) no-repeat left top;
     font: normal 12px tahoma, arial, verdana, sans-serif;
 	margin: 0;
 	padding: 0;
@@ -227,16 +228,16 @@ html, body {
     background-image:url( ../images/grid.png ) !important;
 }
 .add {
-    background-image:url(../../ext/resources/icons/fam/add.gif) !important;
+    background-image:url(../../shared/icons/fam/add.gif) !important;
 }
 .option {
-    background-image:url(../../ext/resources/icons/fam/plugin.gif) !important;
+    background-image:url(../../shared/icons/fam/plugin.gif) !important;
 }
 .remove {
-    background-image:url(../../ext/resources/icons/fam/delete.gif) !important;
+    background-image:url(../../shared/icons/fam/delete.gif) !important;
 }
 .save {
-    background-image:url(../../ext/resources/icons/save.gif) !important;
+    background-image:url(../../shared/icons/save.gif) !important;
 }
 .accordion {
     background-image:url(../images/accordian.gif) !important;
@@ -248,31 +249,31 @@ html, body {
 /* IM window icons */
 
 .user {
-    background-image:url( ../../ext/resources/icons/fam/user.gif ) !important;
+    background-image:url( ../../shared/icons/fam/user.gif ) !important;
 }
 
 .user-add {
-    background-image:url(../../ext/resources/icons/fam/user_add.gif) !important;
+    background-image:url(../../shared/icons/fam/user_add.gif) !important;
 }
 
 .user-delete {
-    background-image:url(../../ext/resources/icons/fam/user_delete.gif) !important;
+    background-image:url(../../shared/icons/fam/user_delete.gif) !important;
 }
 
 .connect {
-    background-image:url(../../ext/resources/icons/fam/connect.gif) !important;
+    background-image:url(../../shared/icons/fam/connect.gif) !important;
 }
 
 .user-girl {
-    background-image:url(../../ext/resources/icons/fam/user_female.gif) !important;
+    background-image:url(../../shared/icons/fam/user_female.gif) !important;
 }
 
 .user-kid {
-    background-image:url(../../ext/resources/icons/fam/user_green.gif) !important;
+    background-image:url(../../shared/icons/fam/user_green.gif) !important;
 }
 
 .user-suit {
-    background-image:url(../../ext/resources/icons/fam/user_suit.gif) !important;
+    background-image:url(../../shared/icons/fam/user_suit.gif) !important;
 }
 
 .ux-start-menu {
